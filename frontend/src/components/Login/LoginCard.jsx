@@ -21,18 +21,18 @@ const LoginCard = () => {
 
                                         <h5 className="fw-normal mb-3 pb-3" style={{letterSpacing: '1px'}}>Sign into your account</h5>
 
-                                        <div className="form-outline mb-4">
+                                        <div className="mb-4">
                                             <label className="form-label" htmlFor="email">Email address</label>
                                             <input type="email" className="form-control form-control-lg" id="email" placeholder='Enter your email'/>
                                         </div>
 
-                                        <div className="form-outline mb-4">
+                                        <div className="mb-4">
                                             <label className="form-label" htmlFor="password">Password</label>
                                             <input type="password" className="form-control form-control-lg" id="password" placeholder='Enter your password'/>
                                         </div>
 
                                         <div className="pt-1 mb-4">
-                                            <button className="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                                            <button className="btn btn-dark btn-lg btn-block" type="button" style={{width: '100%'}}>Login</button>
                                         </div>
 
                                         <a className="small text-muted" href="#!">Forgot password?</a>
