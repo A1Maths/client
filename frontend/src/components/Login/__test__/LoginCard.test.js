@@ -1,9 +1,18 @@
 import '@testing-library/jest-dom'
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup } from '@testing-library/react';
 import LoginCard from '../LoginCard';
 
 
 describe("Login Card display tests", () => {
+
+    // beforeEach(()=>{
+    //     render(<LoginCard/>)
+    // })
+
+    afterEach(()=>{
+        cleanup();
+    })
+
     it('should render the A1 Maths Logo inside Login Card', async () => {
         render(<LoginCard/>)
         const logoElement = screen.getByText(/A1 Maths/i);

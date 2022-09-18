@@ -1,8 +1,13 @@
 import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import Navbar from '../Navbar';
 
 describe("Navbar unit tests", () => {
+    
+    afterEach(()=>{
+        cleanup();
+    })
+
     it('show display the A1 Maths Logo', async () => {
         render(<Navbar/>)
         const logoElement = screen.getByText(/A1Maths/i);

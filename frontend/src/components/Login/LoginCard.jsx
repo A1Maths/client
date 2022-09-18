@@ -1,5 +1,5 @@
 import React from 'react'
-
+import studyingImg from './img/login-img-August-de-Richelieu.jpg'
 const LoginCard = () => {
   return (
     <section className="vh-100" style={{backgroundColor: '#d9d9d9'}} >
@@ -9,7 +9,7 @@ const LoginCard = () => {
                     <div className="card" style={{borderRadius: '1rem'}}>
                         <div className="row g-0">
                             <div className="col-md-6 col-lg-5 d-none d-md-block">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                            <img src={studyingImg}
                                 alt="login form" className="img-fluid" style={{borderRadius: '1rem 0 0 1rem'}} />
                             </div>
                             <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -37,10 +37,6 @@ const LoginCard = () => {
                                         <div className="pt-1 mb-4">
                                             <button className="btn btn-outline-secondary btn-lg" type="button" style={{width: '100%'}}>Forgot Password</button>
                                         </div>
-                                        {/* <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>Don't have an account? <a href="#!"
-                                            style={{color: '#393f81'}}>Register here</a></p> */}
-                                        {/* <a href="#!" className="small text-muted">Terms of use.</a>
-                                        <a href="#!" className="small text-muted">Privacy policy</a> */}
                                     </form>
                                 </div>
                             </div>
