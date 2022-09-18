@@ -30,14 +30,18 @@ describe("Login Card display tests", () => {
 
     it('show render the login button', async () => {
         render(<LoginCard/>)
-        const loginButtonElement = screen.getByRole('button');
+        const loginButtonElement = screen.getByRole('button', {
+            name: 'Login'
+        });
         expect(loginButtonElement).toBeInTheDocument();
     })
 
-    it('show render the forgot password link', async () => {
+    it('show render the forgot password button', async () => {
         render(<LoginCard/>)
-        const resetPasswordLink = screen.getByRole('link');
-        expect(resetPasswordLink).toBeInTheDocument();
+        const loginButtonElement = screen.getByRole('button', {
+            name: 'Forgot Password'
+        });
+        expect(loginButtonElement).toBeInTheDocument();
     })
 })
 

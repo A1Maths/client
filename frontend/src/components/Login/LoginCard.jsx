@@ -2,9 +2,9 @@ import React from 'react'
 
 const LoginCard = () => {
   return (
-    <section className="" style={{backgroundColor: '#d9d9d9'}} >
-        <div className="container py-5 h-100" >
-            <div className="row d-flex justify-content-center align-items-center h-100">
+    <section className="vh-100" style={{backgroundColor: '#d9d9d9'}} >
+        <div className="container py-5" >
+            <div className="row d-flex justify-content-center align-items-center">
                 <div className="col col-xl-10">
                     <div className="card" style={{borderRadius: '1rem'}}>
                         <div className="row g-0">
@@ -34,8 +34,9 @@ const LoginCard = () => {
                                         <div className="pt-1 mb-4">
                                             <button className="btn btn-dark btn-lg btn-block" type="button" style={{width: '100%'}}>Login</button>
                                         </div>
-
-                                        <a className="small text-muted" href="#!">Forgot password?</a>
+                                        <div className="pt-1 mb-4">
+                                            <button className="btn btn-outline-secondary btn-lg" type="button" style={{width: '100%'}}>Forgot Password</button>
+                                        </div>
                                         {/* <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>Don't have an account? <a href="#!"
                                             style={{color: '#393f81'}}>Register here</a></p> */}
                                         {/* <a href="#!" className="small text-muted">Terms of use.</a>
