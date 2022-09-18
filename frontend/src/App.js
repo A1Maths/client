@@ -1,10 +1,9 @@
-import Navbar from "./components/Navbar/Navbar";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      {/* <Login /> */}
+      <Login />
     </div>
   );
 }
