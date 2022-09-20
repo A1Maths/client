@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { AuthContextProvider } from '../../../context/AuthContext';
 import LoginCard from '../LoginCard';
 
 
@@ -25,18 +26,6 @@ describe("Login Card display tests", () => {
         expect(headingElement).toBeInTheDocument();
     })
 
-    it('show render the Email Address Label', async () => {
-        render(<LoginCard/>)
-        const emailLabel = screen.getByLabelText(/Email address/i);
-        expect(emailLabel).toBeInTheDocument();
-    })
-
-    it('show render the Password Address Label', async () => {
-        render(<LoginCard/>)
-        const passwordLabel = screen.getByLabelText(/Password/i);
-        expect(passwordLabel).toBeInTheDocument();
-    })
-
     it('show render the login button', async () => {
         render(<LoginCard/>)
         const loginButtonElement = screen.getByRole('button', {
@@ -59,7 +48,7 @@ describe("Login Card input tests", () => {
     it('should render empty field inside email text box', async () => {
         render(<LoginCard/>)
         const emailInput = screen.getByRole("textbox", {
-            name: "Email address"
+            name: "email"
         });
         expect(emailInput.value).toBe("");
     })
@@ -73,7 +62,7 @@ describe("Login Card input tests", () => {
     it('should render the input inside email text box', async () => {
         render(<LoginCard/>)
         const emailInput = screen.getByRole("textbox", {
-            name: "Email address"
+            name: /email/i
         });
         fireEvent.change(emailInput, {
             target: {

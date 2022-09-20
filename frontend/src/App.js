@@ -9,7 +9,7 @@ function App() {
         <Navbar/>
         <div className="pages">
           <Routes>
-            <Route path="/" element={<Login/>}/>
+            <Route path="/login" element={<Login/>}/>
           </Routes>
         </div>
         <Footer/>
