@@ -1,8 +1,17 @@
 import '@testing-library/jest-dom'
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
-import { AuthContextProvider } from '../../../context/AuthContext';
+import { AuthContext } from '../../../context/AuthContext';
 import LoginCard from '../LoginCard';
 
+const mockProp = jest.fn();
+
+const MockLoginCard = () => {
+    return (
+        <AuthContext.Provider value={mockProp}>
+            <LoginCard/>
+        </AuthContext.Provider>
+    )
+}
 
 describe("Login Card display tests", () => {
 
@@ -15,19 +24,19 @@ describe("Login Card display tests", () => {
     })
 
     it('should render the A1 Maths Logo inside Login Card', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const logoElement = screen.getByText(/A1 Maths/i);
         expect(logoElement).toBeInTheDocument();
     })
 
     it('should render heading login instructions inside Login Card', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const headingElement = screen.getByText(/Sign into your account/i);
         expect(headingElement).toBeInTheDocument();
     })
 
     it('show render the login button', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const loginButtonElement = screen.getByRole('button', {
             name: 'Login'
         });
@@ -35,7 +44,7 @@ describe("Login Card display tests", () => {
     })
 
     it('show render the forgot password button', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const loginButtonElement = screen.getByRole('button', {
             name: 'Forgot Password'
         });
@@ -46,7 +55,7 @@ describe("Login Card display tests", () => {
 describe("Login Card input tests", () => {
 
     it('should render empty field inside email text box', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const emailInput = screen.getByRole("textbox", {
             name: "email"
         });
@@ -54,13 +63,13 @@ describe("Login Card input tests", () => {
     })
 
     it('should render empty field inside password text box', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const passwordInput = screen.getByPlaceholderText(/Enter your password/i)
         expect(passwordInput.value).toBe("");
     })
 
     it('should render the input inside email text box', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const emailInput = screen.getByRole("textbox", {
             name: /email/i
         });
@@ -73,7 +82,7 @@ describe("Login Card input tests", () => {
     })
 
     it('should render the input inside password text box', async () => {
-        render(<LoginCard/>)
+        render(<MockLoginCard/>)
         const passwordInput = screen.getByPlaceholderText(/Enter your password/i)
         fireEvent.change(passwordInput, {
             target: {
