@@ -5,6 +5,9 @@ This is an Independent project I've undertaken with a pseudo client, Longhill Hi
 
 To run the application:
 
+Please make sure to first clone the A1Maths server repository:
+https://github.com/A1Maths/server.git
+
 1. To start, please clone the github repo via HTTPS (or any other preferred method).
 2. Open 2 Terminals up in your code editor
 3. In the first terminal, Enter 'cd server'
