@@ -1,0 +1,16 @@
+.calculator{
+    padding-top: 10rem;
+}
+
+.operations{
+    text-align: left;
+}
+
+.result{
+    text-align: right;
+}
+
+.buttons:hover{
+    opacity: 0.1;
+}
+

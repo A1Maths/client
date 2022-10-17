@@ -16,7 +16,7 @@ const MockLoginCard = () => {
 describe("Login Card display tests", () => {
 
     // beforeEach(()=>{
-    //     render(<LoginCard/>)
+    //     console.log("")
     // })
 
     afterEach(()=>{
