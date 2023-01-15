@@ -1,0 +1,91 @@
+.main__header{
+    height: 100vh;
+    /* background: blue; */
+    
+    display: flex;
+    z-index: 99;
+}
+
+.main__header__container {
+    position: relative;
+}
+
+
+.main__header__content {
+    /* background: red; */
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+    margin-top: 8rem;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    object-fit: contain; */
+}
+
+.left-div, .right-div {
+/* width: 10%; */
+}
+
+.middle-div {
+/* width: 80%; */
+text-align: center;
+}
+
+.left-div {
+    padding-left: 7rem;
+    color: rgb(3, 60, 83);
+}
+
+.left-div > h3 {
+    color: rgb(3, 60, 83);
+}
+
+.right-div {
+    text-align: left;
+    color: rgb(12, 90, 122);
+}
+
+.right-div > nav {
+    font-size: 12px;
+    float: right;
+    padding-right: 7rem;
+}
+
+.main__header__container > img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.main__header__buttons {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.main__header__ad > h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    /* color: rgb(12, 90, 122); */
+}
+
+.main__header__ad > h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+    /* color: rgb(12, 90, 122); */
+}
+
+.main__header__buttons > button {
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    padding: 7px 21px;
+    /* border-color: darkblue; */
+    border: 1px solid rgb(12, 90, 122);
+    background: transparent;
+    color: rgb(12, 90, 122);
+}
