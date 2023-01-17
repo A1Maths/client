@@ -28,24 +28,24 @@ const Navbar = () => {
             id: 'about'
         },
         {
-            name: 'Teams',
-            address: '/teams',
-            id: 'teams'
+            name: 'Courses',
+            address: '/courses',
+            id: 'courses'
         },
         {
-            name: 'Schedule',
-            address: '/schedule',
-            id: 'schedule'
+            name: 'Team',
+            address: '/team',
+            id: 'team'
         },
         {
-            name: 'Testimonials',
-            address: '/',
-            id: 'testimonials'
+            name: 'Pricing',
+            address: '/pricing',
+            id: 'pricing'
         },
         {
-            name: 'Partners',
-            address: '/',
-            id: 'partners'
+          name: 'Blog',
+          address: '/blog',
+          id: 'blog'
         },
         {
             name: 'Contact',
@@ -96,7 +96,7 @@ const Navbar = () => {
                 })
               }
               <li>
-                <Link to='/members' className='navbar__links__members'>MEMBERS</Link>
+                <Link to='/members' className='navbar__links__members'>Login</Link>
               </li>
             </ul>
             <button className="navbar__toggle-btn" onClick={()=> setIsNavShowing(!isNavShowing)}>

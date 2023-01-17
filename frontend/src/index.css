@@ -37,13 +37,13 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
     /* background: var(--primary-bg); */
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
         aliceblue 0%,
         rgb(151, 171, 192) 50%,
         whitesmoke 50%,
         whitesmoke 100%
-    );
+    ); */
 }
 
 .container {

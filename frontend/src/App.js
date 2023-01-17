@@ -8,11 +8,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Navbar/> */}
+        <Navbar/>
         <div className="pages">
           <Routes>
             {/* <Route path="/login" element={<Login/>}/> */}
             <Route path='/' element={<Home/>} />
+            {/* <Route path='/courses' element={<Courses/>} />
+            <Route path='/team' element={<Team/>} />
+            <Route path='/pricing' element={<Pricing/>} />
+            <Route path='/blog' element={<Blog/>} />
+            <Route path='/contact' element={<Contact/>} />
+            <Route path='/register' element={<Register/>} />
+            <Route path='/dashboard' element={<Dashboard/>} /> */}
           </Routes>
         </div>
         {/* <Footer/> */}
