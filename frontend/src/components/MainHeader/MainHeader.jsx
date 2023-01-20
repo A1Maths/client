@@ -6,7 +6,7 @@ import { AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } f
 
 const MainHeader = () => {
   return (
-    <section className='main__header'>
+    <section id='hero' className='main__header'>
         <div className="container main__header__container img-container">
             {/* <div className='main__header__socials'>
                 <div className='social__icons'>

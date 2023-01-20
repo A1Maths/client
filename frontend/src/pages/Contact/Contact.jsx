@@ -3,7 +3,8 @@ import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import {AiOutlineLinkedin} from 'react-icons/ai'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
 

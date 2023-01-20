@@ -11,7 +11,7 @@ import { GiClassicalKnowledge } from 'react-icons/gi'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section id='about' className='about'>
         <div className='about__container__top container'>
           <div className="feature__articles">
             <article className='article'>
@@ -74,7 +74,7 @@ const About = () => {
         <div className='about__container__bottom container'>
           <div className='about__bottom__left__section'>
             <article className='article'>
-                <h1>Article 1</h1>
+                <h1>What we do!</h1>
                 <p>Welcome to our online math learning platform! 
                   We understand that math can be a challenging subject for many students, 
                   which is why we have created this website to help you master math with 
