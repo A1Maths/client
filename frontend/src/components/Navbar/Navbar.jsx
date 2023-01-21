@@ -33,7 +33,7 @@ const Navbar = () => {
             id: 'schools'
         },
         {
-            name: 'Courses',
+            name: 'Parents & Students',
             address: '/courses',
             id: 'courses'
         },

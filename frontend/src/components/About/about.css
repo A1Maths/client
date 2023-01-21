@@ -99,6 +99,13 @@
     transition: 500ms;
 }
 
+/* tablet devices landscape */
+@media (max-width: 1366px) {
+    .about__container__bottom {
+        height: fit-content;
+    }
+}
+
 @media (max-width: 1155px) {
 
     .about__container__top{
@@ -106,7 +113,7 @@
     }
 
     .about__container__bottom {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         height: fit-content;
     }
 }
