@@ -2,10 +2,10 @@
     height: 5rem;
     width: 100vw;
     /* background: rgba(174, 204, 216, 0.6); */
-    background: transparent;
+    /* background: rgb(3, 137, 182, 0.99); */
     display: grid;
     place-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
@@ -56,8 +56,19 @@
 }
 
 /* Media queries small devices*/
+@media screen and (max-width: 1583px) {
+    .navbar__links > li > a {
+        font-size: 14px;
+    }
+}
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1366px) {
+    .navbar__links > li > a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
     .navbar__toggle-btn {
         display: inline-block;
         background: transparent;

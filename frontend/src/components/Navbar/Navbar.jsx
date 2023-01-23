@@ -80,7 +80,7 @@ const Navbar = () => {
                 setIsNavShowing(false);
                 scrollToSection('hero');
                 }}>
-              <strong>A1 Maths</strong>
+              <strong>A1 MXTHS</strong>
             </Link>
             <ul className={`navbar__links ${isNavShowing ? 'show__navbar' : 'hide__navbar'}`}>
               {

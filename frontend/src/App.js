@@ -23,7 +23,7 @@ function App() {
             <Route path='/dashboard' element={<Dashboard/>} /> */}
           </Routes>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </div>
   );

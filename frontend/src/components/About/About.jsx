@@ -74,30 +74,30 @@ const About = () => {
         <div className='about__container__bottom container'>
           <div className='about__bottom__left__section'>
             <article className='article'>
-                <h1>What we do!</h1>
-                <p>Welcome to our online math learning platform! 
-                  We understand that math can be a challenging subject for many students, 
-                  which is why we have created this website to help you master math with 
-                  the help of expert tutors and interactive tools.</p>
-                   
-                  <p>Our team is composed of experienced math teachers and tutors who have a passion for helping 
-                  students succeed. With our platform, you can enjoy the convenience and 
-                  personalized instruction of online learning from the comfort of your own home. 
-                  Sign up now to start elevating your math skills today!</p>
+                <h1>About</h1>
+                <p>
+                  Welcome to our online GCSE Maths learning platform! We understand 
+                  that preparing for the GCSE Maths exam can be a daunting task. But 
+                  with our platform, you can feel confident and prepared for exam day.
+                </p>
+                <br />
+                <p>
+                  Our team of experienced Maths teachers and tutors have a passion for 
+                  helping students succeed. They are dedicated to providing the best possible 
+                  instruction to help students achieve their full potential. 
+                </p>
             </article>
             <article className='article'>
-                <h1>Article 2</h1>
+                <h1>Who we are</h1>
                 <p>
-                  Online learning has been proven to be an effective way to improve math skills.
-                   Studies have shown that students who take online math classes perform just as 
-                   well as, or even better than, students who take traditional classes in a 
-                   brick-and-mortar school.
+                  They understand the importance of personalization and they have created interactive and engaging 
+                  lesson plans, quizzes, and practice problems to ensure that you have a clear 
+                  understanding of the exam format and are testing your knowledge at the right level.
                 </p>
+                <br />
                 <p>
-                  Our online math learning platform is designed with 
-                  best practices for online education in mind, including interactive lessons, 
-                  quizzes, and personalized instruction. Additionally, we have had many success 
-                  stories from students who have used our platform to improve their math skills.
+                  With our platform, you can enjoy the convenience and personalized instruction of 
+                  online learning from the comfort of your own home. Start preparing now and ace your GCSE Maths exam!
                 </p>
             </article>
             <div className="about__buttons">
@@ -106,7 +106,7 @@ const About = () => {
             </div>
           </div>
           <div className='about__bottom__right__section'>
-            <img src={student} alt='image'/>
+            <img src={student} alt='student on computer studying'/>
           </div>
         </div>
     </section>

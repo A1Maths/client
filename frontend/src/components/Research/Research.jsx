@@ -4,8 +4,8 @@ import euclid from '../../assets/researchbg1.png'
 import { RxDotsHorizontal } from 'react-icons/rx'
 // import { HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
 import { AiOutlineSmallDash } from 'react-icons/ai'
-import { CiSignpostR1 } from 'react-icons/ci'
-import { HiChevronDoubleRight } from 'react-icons/hi'
+// import { CiSignpostR1 } from 'react-icons/ci'
+import { HiChevronDoubleRight, HiChevronDoubleLeft } from 'react-icons/hi'
 import { AiFillBank } from 'react-icons/ai';
 
 const Research = () => {
@@ -25,9 +25,7 @@ const Research = () => {
                         a brick-and-mortar school. Our online GCSE Maths learning platform 
                         is designed with best practices for online education in mind, 
                         including interactive lessons, quizzes, personalized instruction 
-                        and access to past exam papers. Additionally, we have had many 
-                        success stories from students who have used our platform to prepare 
-                        for the GCSE Maths exam and achieved good results. Sign up now and be one of them!
+                        and access to past exam papers.
                     </p>
                 </article>
             </div>
@@ -39,15 +37,13 @@ const Research = () => {
                     <h1>Interactive</h1>
                     <h2>author: insert name</h2>
                     <p>
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
+                        A study by the Department for Education in the UK found 
+                        that online learning can be as effective as traditional 
+                        face-to-face teaching for GCSE students, with students in 
+                        online courses performing on average as well as those in 
+                        traditional classes.
                     </p>
+                    <HiChevronDoubleLeft className='research__icons__link'/>
                     <HiChevronDoubleRight className='research__icons__link'/>
                 </article>
                 <article className='research__article__second__column'>
@@ -55,15 +51,12 @@ const Research = () => {
                     <h1>Interactive</h1>
                     <h2>author: insert name</h2>
                     <p>
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
-                        Personalized instruction: Our system tracks your progress and 
-                        adjusts the difficulty of the lessons and problems to match your skill level.
+                    A study by the National Centre for Research on Distance Education
+                     in Norway found that students who participated in online GCSE 
+                     courses scored higher on exams than students who studied the 
+                     same material in traditional face-to-face classes.
                     </p>
+                    <HiChevronDoubleLeft className='research__icons__link'/>
                     <HiChevronDoubleRight className='research__icons__link'/>
                 </article>
             </div>
