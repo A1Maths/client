@@ -37,11 +37,6 @@ const Navbar = () => {
             address: '/courses',
             id: 'courses'
         },
-        // {
-        //     name: 'Team',
-        //     address: '/team',
-        //     id: 'team'
-        // },
         {
             name: 'Pricing',
             address: '/pricing',

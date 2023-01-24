@@ -1,15 +1,18 @@
 import React from 'react'
 import './about.css'
 import student from '../../assets/mathstudentps.png'
-
-import { MdOutlineQuiz } from 'react-icons/md';
-import { MdPersonSearch } from 'react-icons/md';
-import { SiBookstack } from 'react-icons/si';
+import { MdPersonSearch, MdOutlineQuiz, MdOutlineDashboardCustomize } from 'react-icons/md';
+import { SiBookstack, SiFuturelearn } from 'react-icons/si';
 import { RiFunctionLine } from 'react-icons/ri';
-import { SiFuturelearn } from 'react-icons/si';
 import { GiClassicalKnowledge } from 'react-icons/gi'
-
+import { AiFillRobot } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 const About = () => {
+  const transition = {
+      type: "tween",
+      duration: 2
+  }
+
   return (
     <section id='about' className='about'>
         <div className='about__container__top container'>
@@ -42,14 +45,26 @@ const About = () => {
                     adjusts the difficulty of the lessons and problems to match your skill level.
                   </p>
                 </div>
+                <div className='article__second__row'>
+                  <MdOutlineDashboardCustomize className='about__icons topics__icon'/>
+                  <p>
+                    Topic selection: Study at your own pace by choosing which topics to repeat, with unique questions generated everytime.
+                  </p>
+                </div>
             </article>
             <article className='article'>
                 <h1>Expert knowledge</h1>
                 <div className='article__first__row'>
                   <GiClassicalKnowledge className='about__icons knowledge__icon'/>
                   <p>
-                    Expert tutors: Get help from expert tutors who are available to answer 
+                    Expert teachers: Get help from expert tutors who are available to answer 
                     your questions and provide feedback on your work.
+                  </p>
+                </div>
+                <div className='article__second__row'>
+                  <SiFuturelearn className='about__icons progress__icon'/>
+                  <p>
+                    Progress tracking: Track your progress and see how far you've come over time.
                   </p>
                 </div>
             </article>
@@ -63,15 +78,21 @@ const About = () => {
                   </p>
                 </div>
                 <div className='article__second__row'>
-                  <SiFuturelearn className='about__icons progress__icon'/>
+                  <AiFillRobot className='about__icons mockpapers__icon'/>
                   <p>
-                    Progress tracking: Track your progress and see how far you've come over time.
+                    Auto-generated Mock Papers: so you can practice as many times as you like.
                   </p>
                 </div>
             </article>
           </div>
         </div>
-        <div className='about__container__bottom container'>
+        <motion.div
+        initial={{opacity:0, x:-100}}
+        whileInView={{opacity: 1, x: 0}}
+        // animate={{opacity: 1, x: 0}}
+        exit={{opacity: 0, x: 100}}
+        transition={transition} 
+        className='about__container__bottom container'>
           <div className='about__bottom__left__section'>
             <article className='article'>
                 <h1>About</h1>
@@ -108,7 +129,7 @@ const About = () => {
           <div className='about__bottom__right__section'>
             <img src={student} alt='student on computer studying'/>
           </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

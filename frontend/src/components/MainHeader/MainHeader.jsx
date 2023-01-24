@@ -1,14 +1,32 @@
 import React from 'react'
 import './MainHeader.css'
-// import './testHeader.css'
-import headerBg from '../../assets/mathsHero.png'
-import { AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai';
-
+// import { AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 const MainHeader = () => {
+    const transition = {
+        type: "spring",
+        duration: 3
+    }
+
+    const scrollToSection = (target) => {
+        if (window.location.pathname === '/'){
+          const scrolledToElement = document.getElementById(target);
+            if (scrolledToElement) {
+              scrolledToElement.scrollIntoView();
+            }
+            //add handling here
+        }
+      }
+
   return (
     <section id='hero' className='main__header'>
         <div className="container main__header__container">
-            <div className="main__header__content">
+            <motion.div
+            initial={{opacity:0, x:-100}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={transition}
+            className="main__header__content">
                 <div className='main__header__ad'>
                     <h1>
                         Master Math with our Interactive Lessons and Tools
@@ -23,14 +41,14 @@ const MainHeader = () => {
                     </p>
                 </div>
                 <div className="main__header__buttons">
-                    <button className="cta__learn cta">
+                    <button onClick={()=>{scrollToSection('about')}} className="cta__learn cta">
                         <span>Learn More</span>
                     </button>
                     <button className="cta__register cta">
                         <span>Sign Up Now</span>
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </section>
   )

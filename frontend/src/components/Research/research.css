@@ -57,49 +57,33 @@
     padding-left: 10rem;
 }
 
-.research__bottom__content > article > h1 {
-    color: #4a7ea1;
+.research__bottom__content > article > div > h1 {
+    color: rgb(78, 76, 76);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-.research__bottom__content > article > h2 {
-    color: #4a7ea1;
+.research__bottom__content > article > div > h2 {
+    color: rgb(78, 76, 76);
     margin-bottom: 1rem;
     font-size: 1rem;
 }
-.research__bottom__content > article > p {
+.research__bottom__content > article > div > p {
     color: rgb(78, 76, 76);
     font-size: 0.8rem;
     line-height: 2.2rem;
 }
 
-.research__bottom__content > article:nth-child(1) {
-    /* padding-right: 10rem; */
-}
-
-.research__bottom__content > article > h1,
-.research__bottom__content > article > h2  {
-    color: rgb(78, 76, 76);
-}
-
 .research__bottom__content > article:nth-child(2) {
-    /* padding-left: 10rem; */
     padding-top: 4rem;
 }
 
-.research__bottom__content > article:nth-child(2) > p {
+.research__bottom__content > article:nth-child(2) > div > p {
     color: #d9926c;
 }
 
 .research__icons {
     color: #4a7ea1;
     font-size: 40px;
-}
-
-.research__icons__link {
-    margin-top: 1rem;
-    color: #4a7ea1;
-    font-size: 30px;
 }
 
 .research__icons__top {
@@ -157,17 +141,17 @@
         margin-bottom: 0.5rem;
     }
     
-    .research__bottom__content > article > h1 {
+    .research__bottom__content > article > div > h1 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 1.2rem;
     }
-    .research__bottom__content > article > h2 {
+    .research__bottom__content > article > div > h2 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 0.7rem;
     }
-    .research__bottom__content > article > p {
+    .research__bottom__content > article > div > p {
         color: rgb(78, 76, 76);
         font-size: 0.7rem;
         line-height: 1.9rem;
@@ -176,7 +160,7 @@
 }
 
 /* Tablet devices portrait */
-@media (max-width: 1040px) {
+@media (max-width: 1080px) {
 
     .research__top__content {
         top: 20%;
@@ -204,17 +188,17 @@
         margin-bottom: 0.5rem;
     }
     
-    .research__bottom__content > article > h1 {
+    .research__bottom__content > article > div > h1 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 1.2rem;
     }
-    .research__bottom__content > article > h2 {
+    .research__bottom__content > article > div > h2 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 0.7rem;
     }
-    .research__bottom__content > article > p {
+    .research__bottom__content > article > div > p {
         color: rgb(78, 76, 76);
         font-size: 0.7rem;
         line-height: 1.9rem;
@@ -256,17 +240,17 @@
         padding: 1rem 0rem;
     }
     
-    .research__bottom__content > article > h1 {
+    .research__bottom__content > article > div > h1 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 1.2rem;
     }
-    .research__bottom__content > article > h2 {
+    .research__bottom__content > article > div > h2 {
         color: #4a7ea1;
         margin-bottom: 1rem;
         font-size: 0.7rem;
     }
-    .research__bottom__content > article > p {
+    .research__bottom__content > article > div > p {
         color: rgb(78, 76, 76);
         font-size: 10px;
         line-height: 25px;

@@ -13,6 +13,7 @@
 
 .navbar__container {
     height: 100%;
+    /* background: blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
