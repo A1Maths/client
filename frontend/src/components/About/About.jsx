@@ -7,16 +7,38 @@ import { RiFunctionLine } from 'react-icons/ri';
 import { GiClassicalKnowledge } from 'react-icons/gi'
 import { AiFillRobot } from 'react-icons/ai';
 import { motion } from 'framer-motion';
+// import { features } from './aboutInformation'
 const About = () => {
   const transition = {
       type: "tween",
       duration: 2
   }
 
+  // const generateArticles = (features) => {
+  //   features.map((feature,index) => {
+  //     return (
+  //       <article key={index} className='article'>
+  //         <h1>{feature.title}</h1>
+  //         {
+  //           feature.points.map((point, index)=> {
+  //             return (
+  //               <div key={index} className={index === 0 ? 'article__first__row' : 'article__second__row'}>
+  //                 {point.icon}
+  //                 <p>{point.content}</p>
+  //               </div>
+  //             )
+  //           })
+  //         }
+  //       </article>
+  //     )
+  //   })
+  // }
+
   return (
     <section id='about' className='about'>
         <div className='about__container__top container'>
           <div className="feature__articles">
+            {/* { generateArticles(features)} */}
             <article className='article'>
                 <h1>Interactive</h1>
                 <div className='article__first__row'>
@@ -111,7 +133,7 @@ const About = () => {
             <article className='article'>
                 <h1>Who we are</h1>
                 <p>
-                  They understand the importance of personalization and they have created interactive and engaging 
+                  We understand the importance of personalization and have created interactive and engaging 
                   lesson plans, quizzes, and practice problems to ensure that you have a clear 
                   understanding of the exam format and are testing your knowledge at the right level.
                 </p>
