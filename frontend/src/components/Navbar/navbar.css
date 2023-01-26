@@ -2,18 +2,23 @@
     height: 5rem;
     width: 100vw;
     /* background: rgba(174, 204, 216, 0.6); */
-    /* background: rgb(3, 137, 182, 0.99); */
+    /* background: rgb(3, 137, 182); */
     display: grid;
     place-items: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 99;
 }
 
 .navbar__container {
+    /* background: linear-gradient(
+        to bottom right,
+        #097897 0%,
+        #097897 100%
+    ); */
     height: 100%;
-    /* background: blue; */
+    /* background: rgb(3, 137, 182); */
     display: flex;
     justify-content: space-between;
     align-items: center;

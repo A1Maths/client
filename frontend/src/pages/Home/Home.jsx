@@ -19,7 +19,7 @@ const Home = () => {
   }, [targetId]);
 
   return (
-    <div className='home'>
+    <div id='hero' className='home'>
       <MainHeader/>
       <About/>
       <Research/>

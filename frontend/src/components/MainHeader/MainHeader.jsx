@@ -19,7 +19,7 @@ const MainHeader = () => {
       }
 
   return (
-    <section id='hero' className='main__header'>
+    <section id='main__header' className='main__header'>
         <div className="container main__header__container">
             <motion.div
             initial={{opacity:0, x:-100}}

@@ -3,39 +3,124 @@
         to bottom,
         aliceblue 0%,
         rgb(151, 171, 192) 80%,
-        white 70%,
+        white 80%,
         white 100%
-    );
-    height: 68vh;
+        );
+        height: 100%;
+        padding-top: 7rem;
+        margin-bottom: 7rem;
 }
-
+    
 .form__container {
-    background: linear-gradient(
-        to bottom right,
-        #097897 0%,
-        rgb(151, 171, 192) 100%
-    );
     height: 100%;
+    width: 60%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1.5fr;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
 
 .form__left__column{
-    /* width: 100%; */
-    background: blue
+    background: blue;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+.form__left__column img {
+    height: 100%;
 }
 
 .form__right__column{
-    background: red;
+    height: 100%;
+    background: white;
+    padding: 4rem;
 }
 
+.form__right__column__header {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.form__right__column__header > h5,
+.form__right__column__header > h2 {
+    color: rgb(3, 137, 182);
+}
+
+.form__right__column__header > h2 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.form__input__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input__section__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    width: 100%;
+}
+
+.form__input__section__grid__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form__input__section__input, .form__input__section__textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(3, 137, 182);
+    /* background-color: whitesmoke; */
+    /* border-radius: 5px; */
+    resize: none;
+    border-radius: 5px;
+}
+
+.form__input__section__textarea::placeholder {
+    color: black;
+}
+
+.form__input__section__button {
+    background: rgb(3, 137, 182);
+    border: 2px solid rgb(3, 137, 182);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.form__input__section__input:hover,
+.form__input__section__textarea:hover {
+    border: 2px solid rgb(3, 137, 182);
+    margin: -1px;
+    transition: var(--transition);
+}
+
+.form__input__section__button:hover{
+    background: white;
+    color:rgb(3, 137, 182);
+    border: 2px solid rgb(3, 137, 182);
+    transition: var(--transition);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form__container {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+    
+
 /* 
-
-
-
 
 .contact_options {
     display: flex;
