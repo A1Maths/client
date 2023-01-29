@@ -49,15 +49,16 @@
 .cta__learn {
     background: transparent;
     color: white;
+    font-size: 14px;
 }
 
-.cta__register {
+.cta__register a {
     color: #40889c;
     background: white;
+    font-size: 14px;
 }
 
 .cta:hover {
-    
     padding: 0.5rem 3rem;
     transition: var(--transition);
 }

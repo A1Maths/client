@@ -76,7 +76,7 @@ const Navbar = () => {
 
   return (
     <nav
-    style={path !== '/' ? {background:'rgb(3, 137, 182)'} : {background:'transparent', position: 'absolute'}}
+    style={path !== '/' ? {background:'rgb(3, 137, 182)', position: 'sticky'} : {background:'transparent', position: 'fixed'}}
     className="navbar">
       <div className='container navbar__container'>
       <Link 

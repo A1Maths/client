@@ -4,6 +4,7 @@ import MainHeader from '../../components/MainHeader/MainHeader'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Research from '../../components/Research/Research'
+import Register from '../Register/Register'
 
 // import './home.css'
 const Home = () => {

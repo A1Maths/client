@@ -2,6 +2,7 @@ import React from 'react'
 import './MainHeader.css'
 // import { AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 const MainHeader = () => {
     const transition = {
         type: "spring",
@@ -45,7 +46,7 @@ const MainHeader = () => {
                         <span>Learn More</span>
                     </button>
                     <button className="cta__register cta">
-                        <span>Sign Up Now</span>
+                        <Link to='register'>Register Now</Link>
                     </button>
                 </div>
             </motion.div>

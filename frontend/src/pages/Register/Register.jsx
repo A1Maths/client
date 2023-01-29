@@ -1,12 +1,11 @@
 import React, { useRef } from 'react'
-// import {MdOutlineEmail} from 'react-icons/md'
-// import {BsWhatsapp} from 'react-icons/bs'
-// import {AiOutlineLinkedin} from 'react-icons/ai'
 import emailjs from '@emailjs/browser';
-import './form.css'
-import formbg from '../../assets/2kmathsbg3.png'
-import { motion } from 'framer-motion';
-const Form = () => {
+// import './form.css'
+import formbg from '../../assets/EuclidBustTablet.png'
+import './register.css'
+import { motion } from 'framer-motion'
+
+const Register = () => {
 
   const transition = {
     type: "tween",
@@ -29,7 +28,7 @@ const Form = () => {
   // };
 
   return (
-    <section id='form' className='form'>
+    <section id='register' className='form'>
       <div className="container form__container">
         
         <motion.div
@@ -46,8 +45,8 @@ const Form = () => {
         transition={transition} 
         className='form__right__column'>
           <div className='form__right__column__header'>
-            <h5>Get In Touch</h5>
-            <h2>Contact Us</h2>
+            <h5>Mastery of math starts with a single step</h5>
+            <h2>- Take it with us</h2>
           </div>
           <form 
           className="form__input__section"
@@ -70,4 +69,5 @@ const Form = () => {
   )
 }
 
-export default Form
+
+export default Register

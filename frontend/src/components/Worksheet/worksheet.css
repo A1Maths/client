@@ -1,0 +1,20 @@
+.worksheet{
+    height: 100%;
+    background: red;
+}
+
+.worksheet__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    background: blue;
+    height: 90vh;
+    padding: 2rem;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.worksheet__column{
+    height: 100%;
+    background: green;
+}

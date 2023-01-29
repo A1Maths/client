@@ -98,6 +98,11 @@
     color: white;
 }
 
+/* .feature__articles > article:hover {
+    background:#90c1e2;
+    transition: var(--transition);
+} */
+
 .about__buttons > button:hover {
     padding: 0.5rem 3rem;
     color: white;
