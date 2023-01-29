@@ -1,4 +1,5 @@
-import { simplify, evaluate, parse, bignumber, add, subtract } from "mathjs";
+import { simplify, evaluate, parse, bignumber, add, subtract, unaryMinus, unaryPlus } from "mathjs";
+import { randomOperatorGenerator } from "../generator";
 // const mathjs = require('mathjs');
 // import * as mathjs from 'mathjs';
 // const { parse, bignumber, simplify, evaluate } = mathjs;
@@ -47,28 +48,36 @@ const generateMultiplyingSingleTerms = (numberTermsSelected=7) => {
 
 
 const generateOneStepLinearEquation = () => {
-    const equation = '4 = x - 2';
+
+    const first = randomIntegerBetween(0,20);
+    const second = randomIntegerBetween(0,20);
+    const letter = randomLetterGenerator()
+    const operator = randomOperatorGenerator();
+    let equation = '';
+    if (Math.random() < 0.5) {
+        equation = `${letter} ${operator} ${first} = ${second}`;
+    } else if (Math.random() >= 0.5 && Math.random() < 0.75) {
+        equation = `${first} ${operator} ${letter} = ${second}`;
+    } else {
+        equation = `${first} = ${letter} ${operator} ${second}`;
+    }
+    
+    const question = equation;
+    console.log(question);
 
     // Split the equation into left-hand side and right-hand side
     const sides = equation.split('=');
 
     // Determine which side has the variable
-    const hasVariable = sides.findIndex(side => side.includes('x'));
+    const hasVariable = sides.findIndex(side => side.includes(letter));
+    const valueToFlip = sides[hasVariable].replace(/\s/g, '').replace(letter, '');
 
-    // Convert both sides to `Node` objects
-    const lhsNode = parse(sides[hasVariable === 0 ? 1 : 0]);
-    const rhsNode = parse(sides[hasVariable]);
+    //converts values to number type
+    const inverseValue = unaryMinus(valueToFlip);
+    const valueOtherSide = unaryPlus(sides[hasVariable === 0 ? 1 : 0]);
 
-    // Convert the `Node` objects to numbers using `mathjs.evaluate`
-    const lhsValue = evaluate(lhsNode);
-    const rhsValue = evaluate(rhsNode);
-
-    // Isolate the variable by either adding or subtracting the right-hand side from/to the left-hand side
-    const isolatedValue = hasVariable === 0 ? lhsValue + rhsValue : lhsValue - rhsValue;
-
-    console.log(`x = ${isolatedValue}`); // x = 6
-    const question = equation;
-    const answer = `x = ${isolatedValue}`
+    const solution = add(inverseValue, valueOtherSide);
+    const answer = solution.toString();
 
     return {
         question,
