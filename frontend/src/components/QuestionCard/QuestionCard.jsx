@@ -11,7 +11,6 @@ const QuestionCard = ({topicFunction}) => {
     if (dataFetchedRef.current) return;
     dataFetchedRef.current=true;
     const {question, answer} = topicFunction();
-    console.log('this is where I am')
     setQuestion(question);
     setAnswer(answer);
   }, []);

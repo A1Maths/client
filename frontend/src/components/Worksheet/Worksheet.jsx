@@ -10,12 +10,14 @@ const Worksheet = () => {
     <section id='worksheet' className='worksheet'>
         <div className='worksheet__container container'>
             <div className='worksheet__column'>
-              <QuestionCard topicFunction={generateOneStepLinearEquation}/>
+              {/* <QuestionCard topicFunction={generateOneStepLinearEquation}/> */}
             </div>
             <div className='worksheet__column'>
-              {/* <QuestionCard topicFunction={generateMultiplyingSingleTerms}/> */}
+              {/* <QuestionCard topicFunction={generateOneStepLinearEquation}/> */}
+              <QuestionCard topicFunction={generateMultiplyingSingleTerms}/>
             </div>
             <div className='worksheet__column'>
+              {/* <QuestionCard topicFunction={generateOneStepLinearEquation}/> */}
               {/* <QuestionCard topicFunction={generateMultiplyingSingleTerms}/> */}
             </div>
         </div>
